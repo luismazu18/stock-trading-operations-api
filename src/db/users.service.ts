@@ -3,7 +3,7 @@ import { Users } from '@prisma/client';
 import {
   GetUserByCriteriaInterface,
   ReturnFunctionInterface,
-} from 'src/common/interfaces/common.interfaces';
+} from 'src/common/interfaces/common.interface';
 import { UtilService } from 'src/common/util.service';
 import { PrismaService } from './prisma.service';
 

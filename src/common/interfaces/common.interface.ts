@@ -7,9 +7,11 @@ export interface ReturnFunctionInterface<T> {
   count?: number;
 }
 
-export interface GetUserByCriteriaInterface {
+export interface BaseGetByCriteriaInterface {
   id?: string;
-  email?: string;
   rowsPerPage?: number;
   cursor?: string;
+}
+export interface GetUserByCriteriaInterface extends BaseGetByCriteriaInterface {
+  email?: string;
 }
